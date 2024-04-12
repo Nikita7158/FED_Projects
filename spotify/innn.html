@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const apikaUrl="https://jsonplacdholder.typicode.com/tdos;"
+        fetch(apikaurl)
+        .then (response=>{
+            if(!response.ok){
+                throw new Error("network error");}
+
+            }
+            return response.json();)
+            .then(data=>{console.log(data);})
+            .catch(error=>{console.log('error fetching data'+error)})
+        } ;
+    </script>
+    
+</body>
+</html>
